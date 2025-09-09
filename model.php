@@ -1,0 +1,19 @@
+<?php
+include 'connection.php';
+
+if($conn->connect_error){
+    die("Connection failed: " . $conn->connect_error); 
+}
+
+function getUser(){
+    global $conn;
+    $sql = "SELECT * FROM 'data'";
+    return $conn->query($sql);
+}
+
+function getUserById($id){
+    global $conn;
+    $sql = "SELECT * FROM 'data' WHERE id=$id";
+    return $conn->query($sql);
+}
+?>
