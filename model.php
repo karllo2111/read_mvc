@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include "connection.php";
 
 if($conn->connect_error){
     die("Connection failed: " . $conn->connect_error); 
@@ -13,7 +13,7 @@ function getUser(){
 
 function getUserById($id){
     global $conn;
-    $sql = "SELECT * FROM 'data' WHERE id=$id";
+    $sql = "SELECT * FROM kolase WHERE id=$id";
     return $conn->query($sql);
 }
 ?>
