@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }  
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-left: 330px;
+            margin-top: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover{
+            background-color: #c9c9c9ff;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            margin-left: 20px;
+            float: left;
+            color: #f2f2f2;
+            padding: 20px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            color: green;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Contact</a>
+        <a href="">Project</a>
+        <a href="">Service</a>
+    </div>
     <table border="1">
     <tr>
         <th>id</th>
