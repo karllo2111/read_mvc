@@ -18,13 +18,24 @@
             margin-left: 330px;
             margin-top: 150px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation:hehe 4s infinite;
         }
+
+        @keyframes hehe {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+}
         th, td {
             padding: 8px 12px;
             text-align: left;
         }
         th {
             background-color: #f2f2f2;
+            animation:hehe 4s infinite;
         }
 
         tr:hover{
