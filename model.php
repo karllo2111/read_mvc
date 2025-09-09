@@ -7,7 +7,7 @@ if($conn->connect_error){
 
 function getUser(){
     global $conn;
-    $sql = "SELECT * FROM 'data'";
+    $sql = "SELECT * FROM kolase";
     return $conn->query($sql);
 }
 
